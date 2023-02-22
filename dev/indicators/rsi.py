@@ -2,7 +2,7 @@ import pandas as pd
 import pandas_ta as ta
 import yfinance
 import datetime
-
+import robin_stocks.robinhood as rh
 
 
 def get_rsi(ticker):
@@ -10,8 +10,6 @@ def get_rsi(ticker):
                                    end=str(datetime.date.today()))
 
     total_rsi = ta.rsi(stock_data["Close"], length=14)
-
-
 
     class rsiData:
         def __init__(self, rsi):
@@ -21,6 +19,5 @@ def get_rsi(ticker):
     rsi = rsiData(total_rsi)
 
     return rsi
-
 
 
