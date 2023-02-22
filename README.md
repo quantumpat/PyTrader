@@ -16,6 +16,5 @@ The relative strength index of a stock. If the RSI value is between 0 to 30 the 
     # Returns rsi as a number
     get_rsi("[ticker]").last_rsi
 ```
-
 </p>
 </details>
