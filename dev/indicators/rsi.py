@@ -1,11 +1,18 @@
 
-import pandas_ta as pta
+import pandas_ta as ta
 import yfinance
 import datetime
 
 def get_rsi(ticker):
     stock_data = yfinance.download(ticker, str(datetime.date.today() - datetime.timedelta(21)), str(datetime.date.today()))
-    total_rsi = pta.rsi(stock_data["Close"], length=14)
-    last_rsi = total_rsi.iloc[-1]
+    total_rsi = ta.rsi(stock_data["Close"], length=14)
 
-    return last_rsi
+
+    class rsiData:
+        def __init__(self, rsi):
+            self.rsi = rsi
+            self.last_rsi = rsi.iloc[-1]
+
+    rsi = rsiData(total_rsi)
+
+    return rsi
