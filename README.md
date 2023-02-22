@@ -1,7 +1,6 @@
 # PyTrader
 A python based trading program.
 
-<details><summary>Indicators</summary>
 <p>
 
 ### Current Available Indicators
@@ -17,4 +16,3 @@ The relative strength index of a stock. If the RSI value is between 0 to 30 the 
     get_rsi("[ticker]").last_rsi
 ```
 </p>
-</details>
