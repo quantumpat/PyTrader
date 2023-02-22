@@ -1,6 +1,7 @@
 # PyTrader
 A python based trading program.
 
+
 ### Current Available Indicators
 
 #### RSI
