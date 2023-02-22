@@ -1,4 +1,3 @@
-
 import robin_stocks.robinhood as robinhood
 
 # Keep this login info private!
