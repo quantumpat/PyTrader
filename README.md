@@ -1,5 +1,5 @@
 # PyTrader
-A python based trading program.
+A Python-based trading program.
 
 
 ### Current Available Indicators
