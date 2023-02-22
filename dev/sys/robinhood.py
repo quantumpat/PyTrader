@@ -1,7 +1,4 @@
-import pandas as pd
-import pandas_ta as ta
-import numpy as np
-import matplotlib.pyplot as plt
 
+import robin_stocks.robinhood as robinhood
 
-
+login = robinhood.login("patrick.carroll3322@gmail.com", "Patrick51090!")
